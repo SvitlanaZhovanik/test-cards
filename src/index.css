@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply font-montserrat font-medium text-xl bg-mainBackground 
+    @apply font-montserrat font-medium text-xl bg-violet-300   
   }
   
   h1,
