@@ -5,8 +5,9 @@ import Logo from '../assets/Logo.svg'
 
 export const Card = ({id, user, tweets, followers, avatar, follow,
   onFollow }) => {
-  const isFollow = n => {
-    onFollow(id, n);
+  
+  const isFollow = num => {
+    onFollow(id, num);
   };
 
   return (

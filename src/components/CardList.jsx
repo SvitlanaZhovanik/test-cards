@@ -11,13 +11,13 @@ export const CardList = ({data }) => {
     localStorage.setItem('users', JSON.stringify(users));
   }, [users]);
 
-  const onFollow = (id, n) => {
+  const onFollow = (id, num) => {
     setUsers(
       users.map(user => {
         if (user.id === id) {
           return {
             ...user,
-            followers: user.followers + n,
+            followers: user.followers + num,
             follow: !user.follow,
           };
         } else {
