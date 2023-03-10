@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-montserrat font-medium text-xl bg-mainBackground 
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+   @apply mt-0
+  }
+  
+  ul,
+  ol {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cardBackground {
+    background-image: url('../src/assets/picture.png'), linear-gradient(114.99deg, #471CA9 -0.99%, #5736A3 54.28%, #4B2A99 78.99%);
+    background-position: top 20px center, center;
+    background-repeat: no-repeat;
+    background-size: 308px auto, auto;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-moz-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx)  {
+      .cardBackground {
+     background-image: url('../src/assets/picture@2x.png'),  linear-gradient(114.99deg, #471CA9 -0.99%, #5736A3 54.28%, #4B2A99 78.99%);
+  }}
+
+  .line::before {
+  content: ''; 
+  display: block; 
+  height: 8px;
+  width: 380px;
+  background-color: #ebd8ff;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06),
+    inset 0px -1.71846px 3.43693px #ae7be3, inset 0px 3.43693px 2.5777px #fbf8ff;
+  }

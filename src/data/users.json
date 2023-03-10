@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "user": "Elon Reeve Musk",
+    "tweets": 777,
+    "followers": 100500,
+    "avatar": "https://randomuser.me/api/portraits/lego/7.jpg"
+  },
+  {
+    "id": 2,
+    "user": "Bill Gates",
+    "tweets": 547,
+    "followers": 40500,
+    "avatar": "https://randomuser.me/api/portraits/lego/5.jpg"
+  },
+  {
+    "id": 3,
+    "user": "Mark Zuckerberg",
+    "tweets": 477,
+    "followers": 3005,
+    "avatar": "https://randomuser.me/api/portraits/lego/3.jpg"
+  },
+  {
+    "id": 4,
+    "user": "Steve Jobs",
+    "tweets": 277,
+    "followers": 500,
+    "avatar": "https://randomuser.me/api/portraits/lego/0.jpg"
+  }
+]
