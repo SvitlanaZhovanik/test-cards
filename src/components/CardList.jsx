@@ -28,7 +28,7 @@ export const CardList = ({data }) => {
   };
 
   return (
-      <ul className='bg-violet-300 flex flex-wrap  items-center justify-center gap-8 pt-20 w-full'>
+      <ul className='bg-violet-300 h-full flex flex-wrap  items-center justify-center gap-8 pt-20 w-full'>
       {users && users.map((user) => <Card key={user.id}  onFollow={onFollow} {...user}  />)}
     </ul>
   );
