@@ -1,5 +1,6 @@
 import { Card } from './Card';
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 
 export const CardList = ({data }) => {
@@ -33,3 +34,7 @@ export const CardList = ({data }) => {
     </ul>
   );
 };
+
+CardList.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.object).isRequired
+}

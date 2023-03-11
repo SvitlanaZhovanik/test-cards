@@ -1,6 +1,7 @@
 import { Button} from './Button';
 import { convertValue } from '../helpers/convertValue';
 import Logo from '../assets/Logo.svg'
+import PropTypes from 'prop-types';
 
 
 export const Card = ({id, user, tweets, followers, avatar, follow,
@@ -35,3 +36,13 @@ export const Card = ({id, user, tweets, followers, avatar, follow,
     </li>
   );
 };
+
+Card.propTypes = {
+  id: PropTypes.number.isRequired,
+  user: PropTypes.string.isRequired,
+  tweets: PropTypes.number.isRequired,
+  followers: PropTypes.number.isRequired,
+  avatar: PropTypes.number.isRequired,
+  follow: PropTypes.bool,
+  onFollow:PropTypes.func.isRequired
+}
