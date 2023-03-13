@@ -42,7 +42,7 @@ Card.propTypes = {
   user: PropTypes.string.isRequired,
   tweets: PropTypes.number.isRequired,
   followers: PropTypes.number.isRequired,
-  avatar: PropTypes.number.isRequired,
+  avatar: PropTypes.string.isRequired,
   follow: PropTypes.bool,
   onFollow:PropTypes.func.isRequired
 }
